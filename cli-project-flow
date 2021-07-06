@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-06T20:36:27.632Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="uLEJCy6USUtu2DDG40i3" version="14.8.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-06T20:37:43.156Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="K_NMC5xJ7WplVemfOKc5" version="14.8.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="946" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -81,6 +81,9 @@
         </mxCell>
         <mxCell id="ofjlR-MQeCf8TkAx10LB-24" value="If user enters &#39;exit&#39;,&lt;br&gt;exit app" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="820" y="185" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ofjlR-MQeCf8TkAx10LB-26" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs9bcLE1vnFOKUA-PMTbMOHbvoQ1wX9kDQSQ&amp;usqp=CAU;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="10" width="210" height="117.6" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
