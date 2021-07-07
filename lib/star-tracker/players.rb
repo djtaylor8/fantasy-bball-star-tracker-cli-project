@@ -19,8 +19,8 @@ class Players
         @@all 
     end
 
-    def self.print_all_rankings 
-        @@all.each_with_index do |player, index|
+    def self.print_all_rankings(n)
+        @@all.take(n).each_with_index do |player, index|
             puts "#{index + 1}. #{player.name} - #{player.info}"
         end
     end 
