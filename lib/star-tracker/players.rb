@@ -34,7 +34,8 @@ class Players
         puts "====================".colorize(:blue)
         print print_player_ranking_and_info
         puts ""
-        puts @updates 
+        puts @updates
+        puts "" 
     end
 
     def check_for_updates

@@ -53,7 +53,7 @@ class CLI
     end
 
     def goodbye 
-        puts "Thanks for stopping by, and good luck with your matchups! See you tomorrow!"
+        puts "Thanks for stopping by, and good luck with your matchups!"
         puts ""
     end 
  end
