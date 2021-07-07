@@ -34,7 +34,7 @@ class CLI
                 puts ""
                 list_players
             elsif input == 'exit'
-                puts "=======================".colorize(:red)
+                puts "=======================".colorize(:blue)
                 goodbye
             else 
                 puts "Not sure what you want, type 'list' or 'exit'"
