@@ -1,12 +1,11 @@
 class CLI
-
     def call
         greeting
         sleep(1.5)
         puts "Loading data, this might take a second..."
-        #Scraper.new.scrape_all_players
+        Scraper.new.scrape_all_players
         puts "Done! Here are today's player rankings:"
-        #Players.print_all_rankings
+        Players.print_all_rankings
         sleep(1.5)
         menu
     end
@@ -46,7 +45,4 @@ class CLI
     def goodbye 
         puts "Thanks for stopping by, and good luck with your matchups! See you tomorrow!"
     end 
-
-
-
  end
