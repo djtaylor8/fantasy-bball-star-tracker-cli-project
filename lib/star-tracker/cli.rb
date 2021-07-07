@@ -14,13 +14,13 @@ class CLI
     end
     
     def greeting 
-        puts "=============================".colorize(:blue)
+        puts "==========================================================".colorize(:blue)
         puts ""
         puts "Welcome to the Fantasy Basketball Star Tracker"
         puts ""
         puts "Check out the latest rankings for your players and read the most recent updates about their status here."
         puts ""
-        puts "=============================".colorize(:blue)
+        puts "==========================================================".colorize(:blue)
     end
     
     def menu 
@@ -44,7 +44,9 @@ class CLI
     end
     
     def choose_rankings_to_print
-        puts "Enter the number of player rankings you would like to see (1-371): "
+        puts "Whoa, we have access to info on over 350 players!"
+        puts ""
+        puts "Enter the number of players you would like to see in your list (1-371): "
         input = gets.strip.to_i 
         puts "Here are the top #{input} rankings for today..."
         puts "" 
