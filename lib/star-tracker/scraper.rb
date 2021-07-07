@@ -11,7 +11,7 @@ class Scraper
         doc = Nokogiri::HTML(open(@base_url + "/nba/rankings/ros-overall.php"))
         doc.search(".player-label").each do |player|
             name = player.search(".player-name").text
-            info = player.search("small:not(player-status-abbrev)").text
+            info = player.search("small:not(.player-status-abbrev)").text
             url = player.search("a").map {|el| el.attribute('href').value}.reject {|n| n == '#'}
             url_to_string = url.join("")
             if name != ""

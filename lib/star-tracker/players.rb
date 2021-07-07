@@ -1,6 +1,7 @@
 require 'pry'
 require 'open-uri'
 require 'nokogiri'
+require 'colorize'
 
 class Players 
     attr_accessor :name, :info, :url, :updates 
@@ -30,7 +31,7 @@ class Players
 
     def print_player_updates
         check_for_updates
-        puts "===================="
+        puts "====================".colorize(:green)
         print print_player_ranking_and_info
         puts ""
         puts @updates 
