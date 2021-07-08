@@ -4,7 +4,7 @@ this is a *simple* cli app to check the latest fantasy rankings and player updat
 
 ### Installing
 
-run 'bundle' to install all necessary gems for the app. then, enter 'bin/run' to start the application.
+run 'bundle install' to grab all necessary gems for the app. then, enter 'bin/run' to start the application.
 
 ## Contributing
 
