@@ -30,7 +30,7 @@ class CLI
             input = gets.strip.downcase
 
             if input.to_i > 0
-                Players.all[input.to_i - 1].print_player_updates
+                print_player_updates(input)
             elsif input == 'list'
                 puts ""
                 choose_rankings_to_print
@@ -50,9 +50,32 @@ class CLI
         input = gets.strip.to_i 
         puts "Here are the top #{input} rankings for today..."
         puts "" 
-        Players.print_all_rankings(input)
+        print_all_rankings(input)
         puts ""
     end
+
+    def print_player_updates(input)
+        player = Player.all[input.to_i - 1]
+        player.check_for_updates
+        puts "=========================================".colorize(:light_blue)
+        puts "#{player.name} - #{player.info}"
+        puts ""
+        puts player.updates
+        puts "" 
+    end
+
+    def print_all_rankings(input)
+        Player.all.take(input).each_with_index do |player, index|
+            puts "#{index + 1}. #{player.name} - #{player.info}"
+        end
+    end
+    
+    # example method from portfolio review
+    #       def self.print_rankings_alphabetically(input)
+    #     self.all.take(input).sort_by{|p| p.name}.each_with_index do |player, index|
+    #         puts "#{index + 1}. #{player.name} - #{player.info}"
+    #     end
+    # end
 
     def goodbye 
         puts "Thanks for stopping by, and good luck with your matchups!"

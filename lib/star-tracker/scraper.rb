@@ -15,7 +15,7 @@ class Scraper
             url = player.search("a").map {|el| el.attribute('href').value}.reject {|n| n == '#'}
             url_to_string = url.join("")
             if name != ""
-            player = Players.new(name, info, url_to_string)
+            player = Player.new(name, info, url_to_string)
             end 
         end
     end
